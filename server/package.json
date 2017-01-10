@@ -1,0 +1,30 @@
+{
+  "name": "remote-npm-server",
+  "version": "0.0.1",
+  "description": "server for remote-npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 3000",
+    "test": "curl localhost:3000/package/yargs-parser",
+    "logs": "now-logs super-secret-key-bro"
+  },
+  "author": "siddharthkp",
+  "homepage": "https://github.com/siddharthkp/remote-npm#readme",
+  "repository": "siddharthkp/remote-npm",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "keywords": "remote, npm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siddharthkp/remote-cli/issues"
+  },
+  "dependencies": {
+    "micro": "6.1.0",
+    "now-logs": "0.0.7",
+    "sync-exec": "0.6.2",
+    "tar": "2.2.1",
+    "uuid": "3.0.1"
+  }
+}
