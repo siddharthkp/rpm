@@ -1,0 +1,26 @@
+{
+  "name": "rpm",
+  "version": "0.0.1",
+  "description": "download packages remotely",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev=true node index.js install yargs-parser"
+  },
+  "author": "siddharthkp",
+  "homepage": "https://github.com/siddharthkp/rpm#readme",
+  "repository": "siddharthkp/rpm",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "keywords": "rpm, remote, npm, install, fast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siddharthkp/rpm/issues"
+  },
+  "dependencies": {
+    "axios": "0.15.3",
+    "colors": "1.1.2",
+    "tar": "2.2.1"
+  }
+}
