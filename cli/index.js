@@ -13,7 +13,7 @@ if (process.argv.length < 4) {
 }
 
 const package = process.argv.pop();
-info(`Installing ${package}`);
+info(`Resolving ${package}`);
 
 let url = 'https://rpm.now.sh';
 if (process.env.dev) url = 'http://localhost:3000';
@@ -27,6 +27,7 @@ const download = hash => {
       responseType: "arraybuffer"
     })
     .then(response => {
+      info('Downloaded, unpacking');
       fs.writeFileSync(`${process.cwd()}/node_modules.tar`, response.data, 'binary');
       const extractor = tar.Extract({path: process.cwd()})
       .on('error', error)
