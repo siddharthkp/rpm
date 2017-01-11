@@ -1,7 +1,7 @@
 {
-  "name": "remote-npm-server",
+  "name": "rpm-server",
   "version": "0.0.1",
-  "description": "server for remote-npm",
+  "description": "server for rpm",
   "main": "index.js",
   "scripts": {
     "start": "micro -p 3000",
@@ -9,8 +9,8 @@
     "logs": "now-logs super-secret-key-bro"
   },
   "author": "siddharthkp",
-  "homepage": "https://github.com/siddharthkp/remote-npm#readme",
-  "repository": "siddharthkp/remote-npm",
+  "homepage": "https://github.com/siddharthkp/rpm#readme",
+  "repository": "siddharthkp/rpm",
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
@@ -18,7 +18,7 @@
   "keywords": "remote, npm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siddharthkp/remote-cli/issues"
+    "url": "https://github.com/siddharthkp/rpm/issues"
   },
   "dependencies": {
     "micro": "6.1.0",
