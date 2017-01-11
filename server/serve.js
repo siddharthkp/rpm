@@ -10,7 +10,7 @@ module.exports = (filename, res) => {
       return;
     }
 
-    res.writeHead(200);
+    res.writeHead(200, {'Accept-Ranges': 'bytes'});
     res.write(file, 'binary');
     res.end();
   });
